@@ -1,3 +1,11 @@
-<h1><%= message %></h1>
-<h2><%= error.status %></h2>
-<pre><%= error.stack %></pre>
+<section class="about">
+    <div class="projects-banner">
+        <h2><%= message %></h2>
+    </div>
+    <h3><%= error.status || '' %></h3>
+    <% if (error.stack) { %>
+        <pre class="text-start"><%= error.stack %></pre>
+    <% } %>
+    <p class="projects-link"><a href="/"><i class="fa-solid fa-arrow-left"></i>Back to Home</a></p>
+
+</section>

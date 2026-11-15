@@ -1,8 +1,372 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+/* 
+Tristan Burditt - 100982847
+Assignment 2
+Web & Script Programming
+style.css 
+*/
+* {
+    box-sizing: border-box;
 }
 
-a {
-  color: #00B7FF;
+html {
+    scroll-behavior: smooth;
 }
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #242421;
+    background-color: #eee9df;
+}
+
+/*header/navbar*/
+
+header {
+    background-color: #242421;
+    color: #f7f2e8;
+    padding: 28px 5%;
+    border-bottom: 5px solid #d66a4a;
+}
+
+
+header h1 {
+    margin: 0;
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+
+
+}
+
+header p {
+    margin: 3px 0 18px;
+    color: #c9d2bd
+}
+
+nav {
+    text-align: left;
+    padding: 8px;
+}
+
+nav a {
+    display: inline-block;
+    color: #c9d2bd;
+    text-decoration: none;
+    padding: 8px 14px;
+    margin: 3px 5px 3px 0;
+    border: 1px solid transparent;
+}
+
+nav a:hover, nav a:focus {
+    color:#242421;
+    background-color: #c9d2bd;
+    border-color: #c9d2bd
+
+}
+/* page layout */
+main {
+    width: 90%;
+    max-width: 1100px;
+    margin: 40px auto;
+}
+
+section {
+    margin-bottom: 35px;
+}
+
+body h1{
+    padding: 10px 20px;
+    color: #c9d2bd;
+}
+body p{
+    padding: 0px 20px;
+
+}
+
+
+h2{
+    font-size: 2rem;
+    padding: 75px 8%;
+    text-align: center;
+    border-radius: 8px;
+}
+
+h3 {
+    color: #5d7052;
+}
+
+.hero {
+    min-height: 420px;
+    padding: 75px 8%;
+    text-align: center;
+    border-radius: 8px;
+    border-top: 5px solid #d66a4a;
+
+    /* NOTE: Assignment 1 had a gradient here with missing commas, so browsers ignored it.
+       Left off so the page looks exactly as it did. Valid version if you want it:
+       background: linear-gradient(120deg, #c9d2bd, #eee9df 55%, #d66a4a); */
+
+    box-shadow: 0 10px 25px rgba(36, 36, 33, 0.12);
+}
+
+.hero h2 {
+    background: linear-gradient(120deg, #5d7052, #d66a4a);
+    font-size: 3rem;
+    margin-bottom: 10px;
+    
+}
+
+.hero p {
+    max-width: 650px;
+    margin: 0 auto 25px;
+    margin-top: 40px;
+    font-size: 1.15rem;
+}
+
+/* angled linear gradient on the submit button*/
+
+.projects-link {
+    margin: 28px 0 0;
+}
+
+.projects-link a:hover, .projects-link a:focus{
+    color: #5d7052;
+    border-bottom-color: #5d7052;
+}
+
+button {
+    display: inline-block;
+    padding: 11px 22px;
+    margin-top: 15px;
+    border: 0;
+    border-radius: 4px;
+    color: #fff;
+    background: linear-gradient(135deg, #5d7052, #d66a4a);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover, button:focus{
+    opacity: 0.85;
+}
+
+/*about section*/
+.about {
+    background-color: #f7f2e8;
+    padding: 35px;
+    border-top: 5px solid #d66a4a;
+    box-shadow: 0 7px 18px rgba(36, 36, 33, 0.08);
+    text-align: center;
+}
+
+.profile-image {
+    display: block;
+    width: 250px;
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
+    border: 7px solid #c9d2bd;
+    border-radius: 4px;
+}
+
+.intro-video {
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    margin: 20px auto
+}
+
+/*projects section*/
+
+#projects {
+    text-align: center
+}
+
+/*linear gradient*/
+.projects-banner {
+    background: linear-gradient(120deg, #5d7052, #d66a4a);
+    color: #242421;
+    
+    padding: 18px;
+    margin: 15px 0 25px;
+    text-align: center;
+    
+    border-radius: 6px;
+    
+}
+
+.projects-banner h2 {
+    margin: 0;
+    font-size: 3rem;
+}
+
+.projects-link {
+    display:block;
+    width: 90%;
+    max-width: 760px;
+    margin: 22px auto;
+    color: inherit;
+    text-decoration: none;
+}
+
+.project-card {
+    background-color: #f7f2e8;
+    color: #242421;
+    width: 100%;
+    margin: 0;
+    padding: 25px 30px;
+    text-align: center;
+    border-top: 5px solid #d66a4a;
+    border-radius: 3px;
+    box-shadow: 0 7px 18px rgba(36, 36, 33, 0.10);
+    margin-bottom: 0;
+}
+
+.project-link:hover .project-card, .project-card:hover {
+    border-top-color: #5d7052;
+    box-shadow: 0 9px 22px rgba(36, 36, 33, 0.18)
+}
+
+.project-card h3{
+    margin-top: 0;
+}
+.project-card p{
+    margin-bottom: 10px;
+}
+
+.project-action {
+    color: #5d7052;
+    font-weight: bold;
+}
+
+/*contact section*/
+
+.contact {
+    background-color: #f7f2e8;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 35px;
+    border-top: 5px solid #d66a4a;
+    box-shadow: 0 7px 18px rgba(36, 36, 33, 0.08) ;
+    text-align: center;
+}
+
+form {
+    width: 100%
+}
+
+label {
+    display: block;
+    margin-top: 18px;
+    margin-bottom: 5px;
+    color: #242421;
+    font-weight: bold;
+
+}
+
+input, textarea{
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin: 0;
+    padding-bottom: 12px;
+    border: 2px solid #c9d2bd;
+    border-radius: 3px;
+    background-color: #fffdf8;
+    color: #242421;
+    font-family: inherit;
+}
+
+input:invalid,textarea:invalid{
+    border: 2px solid #d66a4a;
+}
+
+input:valid, textarea:valid {
+    border: 1px solid #5d7052
+}
+
+input:focus, textarea:focus {
+    outline: 2px solid #5d7052;
+    outline-offset: 2px;
+    border-color: #d66a4a
+}
+
+/* footer */
+
+footer {
+    margin-top: 50px;
+    padding: 25px 5%;
+    text-align: center;
+    color: #f7f2e8;
+    background-color: #242421;
+    border-top: 5px solid #d66a4a;
+}
+footer p {
+    margin: 4px;
+    color:#c9d2bd;
+}
+
+img, video {
+    max-width: 100%;
+}
+
+/* assignment 2 additions start here*/
+
+/* active page in the navbar */
+nav a.active {
+  color:#242421;
+  background-color: #c9d2bd;
+  border-color:#c9d2bd;
+}
+
+.navbar-toggler {
+  border-color: #c9d2bd;
+}
+
+.project-link {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.project-card h3 i {
+  margin-right: 6px;
+}
+
+/* gradient submit button */
+.btn-gradient {
+  color:#fff;
+  background: linear-gradient(135deg, #5d7052, #d66a4a);
+  border: 0;
+  margin-top: 15px;
+}
+
+.btn-gradient:hover, .btn-gradient:focus {
+  opacity: 0.85;
+  color:#fff
+}
+
+/* alerts and form fields on the contact page*/
+.contact .alert {
+  text-align: left;
+}
+
+.contact .form-control {
+  text-align: left;
+}
+
+/* footer links */
+footer a {
+  color:#f7f2e8;
+  text-decoration: none;
+}
+
+footer a:hover, footer a:focus {
+  color:#d66a4a;
+}
+
+pre {
+  white-space: pre-wrap;
+  padding:0 20px;
+}
+
+  

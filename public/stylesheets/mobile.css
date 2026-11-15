@@ -1,0 +1,86 @@
+/* 
+Tristan Burditt - 100982847
+Assignment 2
+Web & Script Programming
+mobile.css 
+*/
+
+@media screen and (max-width: 767px) {
+
+    header {
+        padding: 20px 4%;
+        text-align:center;
+    }
+
+    header h1 {
+        font-size: 1.7rem;
+    }
+
+    header p {
+        margin-bottom: 12px;
+    }
+
+    nav {
+        text-align: center;
+        padding: 0;
+    }
+
+    nav a {
+        display: block;
+        margin: 6px 0;
+        padding: 10px;
+    }
+
+    main {
+        width: 96%;
+        margin:25px auto;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        padding: 40px 5%;
+    }
+
+    .hero{
+        min-height: auto;
+        padding: 40px 5%;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        margin-top: 20px;
+        font-size: 1rem;
+    }
+
+    button {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .about, .contact, .project-card {
+        padding: 20px;
+    }
+
+    .profile-image {
+        width: 100%
+    }
+
+    .projects-banner h2 {
+        font-size: 2rem;
+    }
+
+    .projects-link {
+        width: 100%;
+    }
+
+    input, textarea {
+        font-size: 16px;
+    }
+
+    footer{
+        padding:20px 4%;
+    }
+}

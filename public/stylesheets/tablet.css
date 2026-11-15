@@ -1,0 +1,49 @@
+/* 
+Tristan Burditt - 100982847
+Assignment 2
+Web & Script Programming
+tablet.css 
+*/
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+    main {
+        width: 94%;
+    }
+
+    header {
+        padding: 24px 4%;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        padding: 60px 6%
+    }
+
+    .hero h2 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1.05rem;
+    }
+
+    .about, .contact, .project-card {
+        padding: 30px;
+    }
+
+    .profile-image {
+        width: 220px;
+    }
+    
+    .intro-video {
+        width: 90%;
+    }
+
+    .projects-banner h2 {
+        font-size: 2.4rem;
+    }
+
+}

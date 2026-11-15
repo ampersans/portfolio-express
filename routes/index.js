@@ -1,3 +1,10 @@
+/* 
+Tristan Burditt - 100982847
+Assignment 2
+Web & Script Programming
+index.js
+*/
+
 var express = require('express');
 var router = express.Router();
 
@@ -79,3 +86,4 @@ router.post('/contact', function(req,res,next) {
 
 
 module.exports = router;
+

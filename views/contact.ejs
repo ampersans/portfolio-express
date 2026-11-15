@@ -18,11 +18,11 @@ contact.ejs
         </div>
     <% } %>
 
-    <% if (errors.length > 0) {%>
+    <% if (errors.length > 0) { %>
         <div class="alert alert-danger text-start" role="alert">
             <i class="fa-solid fa-triangle-exclamation"></i> Please fix the following:
             <ul class="mb-0">
-                <% errors.fortach(function(message) {%>
+                <% errors.forEach(function(message) { %>
                     <li><%= message %></li>
                 <% }); %>
             </ul>
@@ -32,15 +32,18 @@ contact.ejs
     <form action="/contact" method="post">
 
         <label for="name">Name</label>
-        <input type="text" class="form-control" id="name" name="name" values="<%= form.name || '' %>" required>
+        <input type="text" class="form-control" id="name" name="name" values="<%= form.name %>" required>
 
         <label for="email">Email</label>
-        <input type="email" class="form-control" id="email" name="email" values="<%= form.email || '' %>" required>
+        <input type="email" class="form-control" id="email" name="email" values="<%= form.email %>" required>
+
+        <label for="phone">Cell Phone</label>
+        <input type="tel" class="form-control" id="phone" name="phone" value="<%= form.phone %>" inputmode="tel" maxlength="20" required>
 
         <label for="comments">Comments</label>
-        <textarea class="form-control" id="comments" name="comments" rows="6" required><%= form.comments }} ''%></textarea>
+        <textarea class="form-control" id="comments" name="comments" rows="6" required><%= form.comments %></textarea>
 
-        <button type="submit" class="btn btn-gradient"><i class="fa-solid fa-paper-plane"></i>SUbmit</button>
+        <button type="submit" class="btn btn-gradient"><i class="fa-solid fa-paper-plane"></i>Submit</button>
     </form>
     
 

@@ -10,7 +10,7 @@ var router = express.Router();
 
 var projects = [
 
-  //data for projects page, ripped directly from assignment 1
+  //data for projects page, ripped directly from assignment 1 with an addition for this website
   {
     title: 'Personal Banking App',
     icon: 'fa-building-columns',
@@ -22,13 +22,18 @@ var projects = [
     description: 'An incredibly non-linear, choice-based text adventure inspired by classic choose-your-own-adventure novels. Created in an Intro to Programming class in my first year, designed and built in Python.'
   },
   {
-    title: 'Personal Portfolio Website',
+    title: 'Personal Portfolio Website v1',
     icon: 'fa-globe',
-    description: 'This very website! Originally created in Web and Script Programming, designed with CSS and built in HTML. It has now been rebuilt with Node.js, Express and EJS.',
+    description: 'Created in Web and Script Programming, designed with CSS and built in HTML.',
     link: 'https://github.com/ampersans/portfolio-assignment/',
     linkText: 'View Assignment 1 Repo',
-    link2: 'https://github.com/ampersans/my-portfolio/',
-    linkText2: 'View Assignment 2 Repo',
+  },
+  {
+    title: 'Personal Portfolio Website v2',
+    icon: 'fa-globe',
+    description: 'This very website! Originally created in Web and Script Programming, designed with CSS and built in HTML. It has now been rebuilt with Node.js, Express and EJS.',
+    link: 'https://github.com/ampersans/portfolio-express/',
+    linkText: 'View Assignment 2 Repo',
   },
   {
     title: 'Digital Music Keyboard',

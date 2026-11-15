@@ -15,16 +15,23 @@ projects.ejs
         <%projects.forEach(function(project) { %>
             <div class="col-12 col-lg-6">
                 <article class="project-card h-100">
-                    <h3><i class="fa-solid <%= project.icon %>"></i><%= projects.title %></h3>
+                    <div class="project-card-header">
+                        <i class="fa-solid <%= project.icon %>"></i> <%= project.title %>
+                    </div>
+                    <div class="project-card-body">
+                        <% if (project.badge) { %>
+                            <span class="badge project-badge"><%= project.badge %></span>
+                        <% } %>
                     <p><%= project.description %></p>
                     <% if (project.link) { %>
                         <a class="project-link" href="<%= project.link %>" target="_blank" rel="noopener noreferrer">
                             <span class="project-action"><%= project.linkText %> <i class="fa-solid fa-arrow-right"></i></span>
                         </a>
                     <% } %>
+                    </div>
                 </article>
             </div>
-            <% }); %>
+        <% }); %>
     </div>
 
 
